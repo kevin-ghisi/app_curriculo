@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  /* hsl.(240, 6%, 13%) */
+  --grey: hsl(240, 9%, 80%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #121214;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Cracha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 358px;
+
+  color: var(--grey);
+
+  background: url(assets/background.svg);
+
+  border-radius: 1rem;
+}
+
+.Perfil {
+  width: 10rem;
+  height: 11.5rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+ul {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
